@@ -97,7 +97,7 @@ label {
 }
 
 .collapsible-text {
-    min-height: 100px;
+    min-height: 50px;
     overflow: hidden;
     border-radius: 4px;
     line-height: 1.4;
@@ -270,3 +270,5 @@ a {
     font-weight: bold;
     
   }
+
+  
