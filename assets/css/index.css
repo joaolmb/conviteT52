@@ -43,6 +43,11 @@
     flex-direction: column;
 
 }
+
+label {
+    text-align: center;
+    color: #FFFFFF!important;
+}
 /* Texto escondido */
 .collapsible {
     width: 90vw;
@@ -106,7 +111,7 @@
 .collapsible input:checked~.collapsible-text {
     width: 90vw;
     max-width: 500px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     background: #ffff;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     opacity: 1;
@@ -114,16 +119,11 @@
 
 }
 
-.collapsible-text h2 {
-    margin-bottom: 10px;
-    padding: 15px 15px 0;
-    color: #1c1c6b;
-
-}
-
 .collapsible-text p {
-    padding-left: 15px;
-    padding-right: 15px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
 }
 
 /* /////////////////////////////////////////////// */
@@ -201,8 +201,9 @@
 }
 
 .collapsible-text2 p {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
 }
 
 /* /////////////////////////////////////////////////////////////////// */
@@ -256,4 +257,16 @@ a {
   .button:hover span:after {
     opacity: 1;
     right: 0;
+  }
+
+  .footer {
+    display: flex;
+    color: black;
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
   }
