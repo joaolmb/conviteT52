@@ -5,7 +5,7 @@
 
 /* Gradiente de fundo */
 .container {
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
