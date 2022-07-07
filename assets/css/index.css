@@ -28,9 +28,14 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .img{
+        height: 100px;
+    }
+}
+
 #title {
     text-align: center;
-    
 }
 
 .cards {
