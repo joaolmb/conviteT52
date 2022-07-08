@@ -4,18 +4,21 @@
 }
 
 /* Gradiente de fundo */
-
-
 .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    justify-content: end;
+    justify-content: space-between;
     background: linear-gradient(45deg, #eaf6f6, #ffc54d,#1a4d2e,#1f4690);
     background-size:300% 300%; 
     animation: colors 15s ease infinite;
+
+}
+
+.img {
+    padding-top: 5vh;
 }
 
 @keyframes colors {
@@ -30,14 +33,12 @@
     }
 }
 
+
 @media screen and (max-width: 600px) {
     .img{
         height: 100px;
     }
-}
-
-.img{
-    padding-top: 20px;
+    
 }
 
 footer{
@@ -56,6 +57,7 @@ footer{
 
 .cards {
     display: flex;
+    align-items: center;
     flex-direction: column;
 
 }
@@ -64,165 +66,6 @@ label {
     text-align: center;
     color: #FFFFFF!important;
 }
-/* Texto escondido */
-.collapsible {
-    width: 90vw;
-    max-width: 500px;
-    overflow: hidden;
-    font-weight: 500;
-}
-
-/* Botão do tipo check que fica escondido */
-.collapsible input {
-    display: none;
-}
-
-/* Botão principal */
-.collapsible label {
-    position: relative;
-    font-weight: 600;
-    background: #1693a5;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
-    color: #c7ede8;
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 30px ;
-    border-radius: 4px;
-    z-index: 1;
-}
-
-/* Parte da medalha */
-.collapsible label:after {
-    content: "";
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 18px;
-    height: 18px;
-    content: url(https://media.discordapp.net/attachments/992082604792750240/992255707200106586/3831808051656516899-32.png);
-    float: right;
-    transition: transform 2s ease;
-    transform: rotate(380deg);
-    transition: all 0.3s ease;
-}
-
-/* Faz a medalha girar */
-.collapsible input:checked+label::after {
-    transform: rotate(90deg);
-}
-
-.collapsible-text {
-    min-height: 50px;
-    overflow: hidden;
-    border-radius: 4px;
-    line-height: 1.4;
-    position: relative;
-    top: -100%;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-    margin-bottom: 20px;
-}
-
-.collapsible input:checked~.collapsible-text {
-    width: 90vw;
-    max-width: 500px;
-    padding-bottom: 10px;
-    background: #ffff;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
-    opacity: 1;
-    top: 0;
-
-}
-
-.collapsible-text p {
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-}
-
-/* /////////////////////////////////////////////// */
-
-.collapsible2 {
-    width: 90vw;
-    max-width: 500px;
-    overflow: hidden;
-    font-weight: 500;
-}
-
-.collapsible2 input {
-    display: none;
-}
-
-.collapsible2 label {
-    position: relative;
-    font-weight: 600;
-    background: #1693a5;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
-    color: #c7ede8;
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-    padding: 30px ;
-    border-radius: 4px;
-    z-index: 1;
-}
-
-.collapsible2 label:after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    top: 6px;
-    width: 100px;
-    content: url(../images/Sem\ título-1\ copiar.svg);
-    float: right;
-    /* transition: transform 1s ease; */
-    transform: rotate(34deg);
-    transition: all 0.3s ease;
-}
-
-
-.collapsible2 input:checked+label::after {
-    transform: rotate(80deg);
-}
-
-.collapsible-text2 {
-    max-height: 400px;
-    overflow: hidden;
-    border-radius: 4px;
-    line-height: 1.4;
-    position: relative;
-    top: -100%;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-}
-
-.collapsible2 input:checked~.collapsible-text2 {
-    width: 90vw;
-    max-width: 500px;
-    padding-bottom: 25px;
-    background: #ffff;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
-    opacity: 1;
-    top: 0;
-
-}
-
-.collapsible-text2 h2 {
-    margin-bottom: 10px;
-    padding: 15px 15px 0;
-    color: #1c1c6b;
-
-}
-
-.collapsible-text2 p {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-}
-
-/* /////////////////////////////////////////////////////////////////// */
 
 a {
     text-decoration: none;
@@ -277,4 +120,56 @@ a {
 
 .links{
     color: black;
+}
+
+
+.cartao-expansivel {
+    background-color: #F0A500;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80vw;
+    max-width: 550px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.active,
+.cartao-expansivel:hover {
+    background-color: #4D77FF;
+}
+
+
+.cartao-expansivel:after {
+    content: '\02795';
+    color: rgb(0, 0, 0);
+    float: right;
+    font-weight: bold;
+    transition: transform 2s ease;
+    transform: rotate(90deg);
+    transition: all 0.5s ease;
+    margin-left: 5px;
+}
+
+.active:after {
+    transform: rotate(0deg);
+}
+
+.conteudo {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    width: 80vw;
+    max-width: 500px;
+    border-radius: 5px;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
 }

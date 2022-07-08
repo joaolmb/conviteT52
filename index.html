@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <title>Convite T52</title>
     <script src="./assets/scripts/script.js"></script>
+
     <audio id="audio" src="./assets/audio/pandeiro.mp3"></audio>
 </head>
 
@@ -18,39 +19,25 @@
         <div>
             <img class="img" src="./assets/images/obeemepers.png" height="150px">
         </div>
-        <!-- <div> -->
+
         <div class="cards">
-            <div class="collapsible">
-                <input type="checkbox" id="collapsible-head">
-                <label for="collapsible-head">Pluralidade Cultural</label>
-                <div class="collapsible-text">
-                    <p>
-                        Somos a primeira turma ObeeMEPERS, e estamos espalhados por todo Brasil, com uma diversidade
-                        de
-                        sotaques, dialetos, costumes, enfim uma grande Pluralidade cultural.
-
-                        Iniciamos juntos essa jornada, e conseguimos cumprir nossos objetivos, e queremos
-                        compartilhar
-                        nossa alegria com você, então vamos para formatura!
-
-                    </p>
-                </div>
+            <button class="cartao-expansivel">Turma 52 - Brasil, patria programadora</button>
+            <div class="conteudo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex
+                    ea commodo consequat.</p>
             </div>
-            <div class="collapsible2">
-                <input type="checkbox" onclick="sound()" id="collapsible-head2">
-                <label for="collapsible-head2"> 22/07 17:30</label>
-                <div class="collapsible-text2">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quisquam itaque quod, maxime
-                        repellendus odio neque laudantium magni culpa. Iste nesciunt dicta expedita assumenda
-                        voluptatum
-
-                    </p>
-                </div>
+            <button class="cartao-expansivel">Open Section 2</button>
+            <div class="conteudo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex
+                    ea commodo consequat.</p>
             </div>
         </div>
-        <!-- </div> -->
-
 
         <div class="div-btn">
             <a href="https://www.amazon.com.br/?tag=admarketbr-20&ref=pd_sl_962ba62b0580b139bfff8b70626200cca730797bdb2f7af549cac4da&mfadid=adm"
@@ -71,10 +58,27 @@
             </a>
             <a class="links" href="https://www.linkedin.com/in/jlsouzapaz/" target="_blank">
                 & João Paz
-            </a> 
+            </a>
             <!-- <img src="/assets/images/icons8-linkedin-circundado (1).svg"> -->
         </footer>
     </div>
+    <script>
+        var coll = document.getElementsByClassName("cartao-expansivel");
+
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
