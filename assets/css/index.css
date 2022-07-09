@@ -136,9 +136,8 @@ a {
     font-size: 15px;
     border-radius: 10px;
     margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    position: relative;
     
 }
 
@@ -149,14 +148,14 @@ a {
 
 
 .cartao-expansivel:after {
+    float: right;
     content: '\02795';
     color: rgb(0, 0, 0);
-    float: right;
     font-weight: bold;
     transition: transform 2s ease;
     transform: rotate(90deg);
     transition: all 0.5s ease;
-    margin-left: 5px;
+    
 }
 
 .active:after {
