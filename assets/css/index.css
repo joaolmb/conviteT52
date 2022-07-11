@@ -175,3 +175,7 @@ a {
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
+
+.conteudo p{
+    margin-top: 20px ;
+}
