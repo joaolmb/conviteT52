@@ -12,10 +12,8 @@
     margin: auto;
     justify-content: space-between;
     background: linear-gradient(45deg, #eaf6f6, #ffc54d,#1a4d2e,#1f4690);
-    /* background: linear-gradient(45deg, #ffffff, #ffcb2f,#1a711e,#282ee5); */
     background-size:300% 300%; 
     animation: colors 15s ease infinite;
-
 }
 
 .img {
@@ -36,6 +34,9 @@
 
 
 @media screen and (max-width: 600px) {
+    .container {
+        height: 111vh;
+    }
     .img{
         height: 100px;
     }
@@ -101,8 +102,7 @@ a {
     display: inline-block;
     position: relative;
     transition: 0.5s;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  }
+      }
   
   .button span:after {
     content: '\00bb';
