@@ -4,7 +4,7 @@
 }
 
 /* Gradiente de fundo */
-.container {
+body{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,8 +15,8 @@
     /* background: linear-gradient(45deg, #ffffff, #ffcb2f,#1a711e,#282ee5); */
     background-size:300% 300%; 
     animation: colors 15s ease infinite;
-
 }
+
 
 .img {
     padding-top: 5vh;
