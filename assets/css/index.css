@@ -88,9 +88,10 @@ a {
     font-size: 28px;
     padding: 10px;
     width: 300px;
-    /* transition: all 0.5s; */
+    transition: all 0.5s;
     cursor: pointer;
     margin: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   .button span {
@@ -98,6 +99,7 @@ a {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   .button span:after {
