@@ -12,6 +12,7 @@
     margin: auto;
     justify-content: space-between;
     background: linear-gradient(45deg, #eaf6f6, #ffc54d,#1a4d2e,#1f4690);
+    /* background: linear-gradient(45deg, #ffffff, #ffcb2f,#1a711e,#282ee5); */
     background-size:300% 300%; 
     animation: colors 15s ease infinite;
 
@@ -79,9 +80,10 @@ a {
 }
 
 .button {
+    text-align: center;
     display: inline-block;
-    border-radius: 4px;
-    background-color: #1693a5;
+    border-radius: 20px;
+    background-color: #1c1717;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -91,7 +93,7 @@ a {
     transition: all 0.5s;
     cursor: pointer;
     margin: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .button span {
@@ -99,7 +101,7 @@ a {
     display: inline-block;
     position: relative;
     transition: 0.5s;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   }
   
   .button span:after {
@@ -126,8 +128,10 @@ a {
 
 
 .cartao-expansivel {
-    background-color: #F0A500;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: #0000007a;
     cursor: pointer;
     padding: 18px;
     width: 80vw;
@@ -140,12 +144,13 @@ a {
     margin: 20px;
     display: block;
     position: relative;
+    border: #FFFFFF;
     
 }
 
 .active,
 .cartao-expansivel:hover {
-    background-color: #4D77FF;
+    background-color: #0000007a;
 }
 
 
@@ -168,7 +173,6 @@ a {
 
 .conteudo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*adicionando aqui só pra gente lembrar de trocar fonte */
-    padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     width: 80vw;
@@ -179,5 +183,5 @@ a {
 }
 
 .conteudo p{
-    margin-top: 20px ;
+    margin: 20px ;
 }
