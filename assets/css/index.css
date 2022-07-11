@@ -12,7 +12,6 @@ body{
     margin: auto;
     justify-content: space-between;
     background: linear-gradient(45deg, #eaf6f6, #ffc54d,#1a4d2e,#1f4690);
-    /* background: linear-gradient(45deg, #ffffff, #ffcb2f,#1a711e,#282ee5); */
     background-size:300% 300%; 
     animation: colors 15s ease infinite;
 }
@@ -36,6 +35,9 @@ body{
 
 
 @media screen and (max-width: 600px) {
+    .container {
+        height: 111vh;
+    }
     .img{
         height: 100px;
     }
@@ -101,8 +103,7 @@ a {
     display: inline-block;
     position: relative;
     transition: 0.5s;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  }
+      }
   
   .button span:after {
     content: '\00bb';
@@ -129,7 +130,7 @@ a {
 
 .cartao-expansivel {
     color: rgb(255, 255, 255);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     background-color: #0000007a;
     cursor: pointer;
@@ -145,7 +146,6 @@ a {
     display: block;
     position: relative;
     border: #FFFFFF;
-    
 }
 
 .active,
@@ -172,14 +172,16 @@ a {
 }
 
 .conteudo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*adicionando aqui só pra gente lembrar de trocar fonte */
+    /* text-align: center; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-height: 0;
     overflow: hidden;
     width: 80vw;
     max-width: 500px;
     border-radius: 5px;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: #00000054;
+    color: white;
 }
 
 .conteudo p{
